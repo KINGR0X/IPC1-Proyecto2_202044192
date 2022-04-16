@@ -1,0 +1,37 @@
+[
+  {
+    "Numero": 114,
+    "Nombre": "Tangela",
+    "Tipo": "Planta",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png",
+    "Ataque": "Látigo cepa"
+  },
+  {
+    "Numero": 270,
+    "Nombre": "Lotad",
+    "Tipo": "Planta",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/270.png",
+    "Ataque": "Hoja afilada"
+  },
+  {
+    "Numero": 252,
+    "Nombre": "Treecko",
+    "Tipo": "Planta",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/252.png",
+    "Ataque": "Semilladora"
+  },
+  {
+    "Numero": 331,
+    "Nombre": "Cacnea",
+    "Tipo": "Planta",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/331.png",
+    "Ataque": "Hierba lazo"
+  },
+  {
+    "Numero": 388,
+    "Nombre": "Grotle",
+    "Tipo": "Planta",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/388.png",
+    "Ataque": "Hoja afilada"
+  }
+]

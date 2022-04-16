@@ -1,0 +1,107 @@
+[
+  {
+    "Numero": 54,
+    "Nombre": "Psyduck",
+    "Tipo": "Agua",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
+    "Ataque": "Acua cola"
+  },
+  {
+    "Numero": 60,
+    "Nombre": "Poliwag",
+    "Tipo": "Agua",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
+    "Ataque": "Rayo Burbuja"
+  },
+  {
+    "Numero": 90,
+    "Nombre": "Shellder",
+    "Tipo": "Agua",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
+    "Ataque": "Hidropulso"
+  },
+  {
+    "Numero": 98,
+    "Nombre": "Krabby",
+    "Tipo": "Agua",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
+    "Ataque": "Burbuja"
+  },
+  {
+    "Numero": 131,
+    "Nombre": "Lapras",
+    "Tipo": "Agua",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+    "Ataque": "Surf"
+  },
+  {
+    "Numero": 58,
+    "Nombre": "Growlithe",
+    "Tipo": "Fuego",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
+    "Ataque": "Lanzallamas"
+  },
+  {
+    "Numero": 59,
+    "Nombre": "Arcanine",
+    "Tipo": "Fuego",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
+    "Ataque": "Llamarada"
+  },
+  {
+    "Numero": 136,
+    "Nombre": "Flareon",
+    "Tipo": "Fuego",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
+    "Ataque": "Sofoco"
+  },
+  {
+    "Numero": 155,
+    "Nombre": "Cyndaquil",
+    "Tipo": "Fuego",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/155.png",
+    "Ataque": "Lanzallamas"
+  },
+  {
+    "Numero": 324,
+    "Nombre": "Torkoal",
+    "Tipo": "Fuego",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/324.png",
+    "Ataque": "Sofoco"
+  },
+  {
+    "Numero": 114,
+    "Nombre": "Tangela",
+    "Tipo": "Planta",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png",
+    "Ataque": "Látigo cepa"
+  },
+  {
+    "Numero": 270,
+    "Nombre": "Lotad",
+    "Tipo": "Planta",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/270.png",
+    "Ataque": "Hoja afilada"
+  },
+  {
+    "Numero": 252,
+    "Nombre": "Treecko",
+    "Tipo": "Planta",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/252.png",
+    "Ataque": "Semilladora"
+  },
+  {
+    "Numero": 331,
+    "Nombre": "Cacnea",
+    "Tipo": "Planta",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/331.png",
+    "Ataque": "Hierba lazo"
+  },
+  {
+    "Numero": 388,
+    "Nombre": "Grotle",
+    "Tipo": "Planta",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/388.png",
+    "Ataque": "Hoja afilada"
+  }
+]

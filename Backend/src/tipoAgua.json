@@ -1,0 +1,37 @@
+[
+  {
+    "Numero": 54,
+    "Nombre": "Psyduck",
+    "Tipo": "Agua",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
+    "Ataque": "Acua cola"
+  },
+  {
+    "Numero": 60,
+    "Nombre": "Poliwag",
+    "Tipo": "Agua",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
+    "Ataque": "Rayo Burbuja"
+  },
+  {
+    "Numero": 90,
+    "Nombre": "Shellder",
+    "Tipo": "Agua",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
+    "Ataque": "Hidropulso"
+  },
+  {
+    "Numero": 98,
+    "Nombre": "Krabby",
+    "Tipo": "Agua",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
+    "Ataque": "Burbuja"
+  },
+  {
+    "Numero": 131,
+    "Nombre": "Lapras",
+    "Tipo": "Agua",
+    "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+    "Ataque": "Surf"
+  }
+]
