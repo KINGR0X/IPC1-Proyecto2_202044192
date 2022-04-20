@@ -103,5 +103,12 @@
     "Tipo": "Planta",
     "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/388.png",
     "Ataque": "Hoja afilada"
+  },
+  {
+    "Numero": "",
+    "Nombre": "Pokemon no encontrado",
+    "Tipo": "",
+    "Imagen": "https://freestencilgallery.com/wp-content/uploads/2017/04/Pokemon-Ditto-Silhouette-Stencil-thumb.jpg",
+    "Ataque": " "
   }
 ]

@@ -44,10 +44,26 @@ app.post("/usuarios", (req, res) => {
   }
 });
 
+// //Mostrar todos los pokemons
+// app.post("/pokemons", (req, res) => {
+//   let pokedex = require("./pokedex.json");
+
+//   var posicion = req.body.num;
+
+//   //Regresa la posicion que se le pide
+//   res.send(pokedex[0]);
+// });
+var posicionP = 0;
 //Mostrar todos los pokemons
 app.get("/pokemons", (req, res) => {
   let pokedex = require("./pokedex.json");
-  res.send(pokedex);
+
+  //Regresa la posicion que se le pide
+  res.send(pokedex[posicionP]);
+  posicionP++;
+  if (posicionP >= 15) {
+    posicionP = 0;
+  }
 });
 
 //Mostrar pokemons por numero
@@ -71,7 +87,7 @@ app.post("/Numero_Pokedex", (req, res) => {
 
   //Mensaje en el caso que no se encuentre el usuario
   if (numeroEncontrado == false) {
-    res.send({ Mensaje: "Numero en la pokedex no encontrado" });
+    res.send(pokes[15]);
   }
 });
 
@@ -96,28 +112,31 @@ app.post("/Nombre_Pokedex", (req, res) => {
 
   //Mensaje en el caso que no se encuentre el usuario
   if (nombreEncontrado == false) {
-    res.send({ Mensaje: "Nombre en la pokedex no encontrado" });
+    res.send(pokes[15]);
   }
 });
 
 //Mostrar pokemons por tipo
 app.post("/Tipo_Pokedex", (req, res) => {
-  let tipoAgua = require("./tipoAgua.json"); //variable que guarda el json de pokedex
-  let tipoFuego = require("./tipoFuego.json");
-  let tipoPlanta = require("./tipoPlanta.json");
-
-  var tipo = req.body.tipo;
+  let pokedexT = require("./pokedex.json");
 
   var tipoEncontrado = false;
 
+  var tipo = req.body.tipo;
+
+  var numTipo = req.body.numTipo;
+
   if (tipo == "Agua") {
-    res.send(tipoAgua);
+    res.send(pokedexT[numTipo]);
+    tipoEncontrad = true;
   } else if (tipo == "Fuego") {
-    res.send(tipoFuego);
+    res.send(pokedexT[numTipo]);
+    tipoEncontrad = true;
   } else if (tipo == "Planta") {
-    res.send(tipoPlanta);
-  } else {
-    res.send({ Mensaje: "Tipo en la pokedex no encontrado" });
+    res.send(pokedexT[numTipo]);
+    tipoEncontrad = true;
+  } else if (numTipo >= 20) {
+    res.send(pokedexT[15]);
   }
 });
 
