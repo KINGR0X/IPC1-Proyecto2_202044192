@@ -10,8 +10,14 @@ function Todos() {
     });
 }
 
+//Uso esto para cuando estan todos los pokemons y hay que seleccionar uno, devuelve el valor colo si fuera un array, segun su posicion, como un array
+// var quemado = -1;
+// var kill = "datos" + "(" + parseInt(quemado) + ")";
+
 function atrapaATodos() {
   for (var i = 0; i < 15; i++) {
+    // quemado = quemado + 1;
+    // kill = "datos" + "(" + parseInt(quemado) + ")";
     Todos();
   }
 }
@@ -113,6 +119,9 @@ function crearPokemon(pokemon) {
   const spriteContainer = document.createElement("div");
   spriteContainer.classList.add("img-container");
 
+  //Le agrego el atributo onclick, para poder obtener el nombre del pokemon
+  // spriteContainer.setAttribute("onClick", num);
+
   const sprite = document.createElement("img");
   sprite.src = pokemon.Imagen;
 
@@ -123,6 +132,7 @@ function crearPokemon(pokemon) {
 
   const name = document.createElement("p");
   name.classList.add("name");
+  name.setAttribute("id", "nombre");
   name.textContent = pokemon.Nombre;
 
   const type = document.createElement("p");
@@ -144,6 +154,13 @@ function crearPokemon(pokemon) {
 
   pokemonContainer.appendChild(card);
 }
+
+// function datos(nombreD) {
+//   //Obtiene el nombre del pokemon presionado
+//   var pokeSelec = document.getElementsByClassName("name")[nombreD].textContent;
+//   console.log(pokeSelec);
+//   buscarBig(pokeSelec);
+// }
 
 //Funcion para que se borren todos los pokemones ya "dibujados"
 function limpiarPokes(parent) {
