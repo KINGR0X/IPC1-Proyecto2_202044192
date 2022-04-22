@@ -4,111 +4,127 @@
     "Nombre": "Psyduck",
     "Tipo": "Agua",
     "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
-    "Ataque": "Acua cola"
+    "Ataque": "Acua cola",
+    "Shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/54.png"
   },
   {
     "Numero": 60,
     "Nombre": "Poliwag",
     "Tipo": "Agua",
     "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
-    "Ataque": "Rayo Burbuja"
+    "Ataque": "Rayo Burbuja",
+    "Shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/60.png"
   },
   {
     "Numero": 90,
     "Nombre": "Shellder",
     "Tipo": "Agua",
     "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
-    "Ataque": "Hidropulso"
+    "Ataque": "Hidropulso",
+    "Shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/90.png"
   },
   {
     "Numero": 98,
     "Nombre": "Krabby",
     "Tipo": "Agua",
     "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
-    "Ataque": "Burbuja"
+    "Ataque": "Burbuja",
+    "Shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/98.png"
   },
   {
     "Numero": 131,
     "Nombre": "Lapras",
     "Tipo": "Agua",
     "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
-    "Ataque": "Surf"
+    "Ataque": "Surf",
+    "Shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/131.png"
   },
   {
     "Numero": 58,
     "Nombre": "Growlithe",
     "Tipo": "Fuego",
     "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
-    "Ataque": "Lanzallamas"
+    "Ataque": "Lanzallamas",
+    "Shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/58.png"
   },
   {
     "Numero": 59,
     "Nombre": "Arcanine",
     "Tipo": "Fuego",
     "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
-    "Ataque": "Llamarada"
+    "Ataque": "Llamarada",
+    "Shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/59.png"
   },
   {
     "Numero": 136,
     "Nombre": "Flareon",
     "Tipo": "Fuego",
     "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
-    "Ataque": "Sofoco"
+    "Ataque": "Sofoco",
+    "Shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/136.png"
   },
   {
     "Numero": 155,
     "Nombre": "Cyndaquil",
     "Tipo": "Fuego",
     "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/155.png",
-    "Ataque": "Lanzallamas"
+    "Ataque": "Lanzallamas",
+    "Shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/155.png"
   },
   {
     "Numero": 324,
     "Nombre": "Torkoal",
     "Tipo": "Fuego",
     "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/324.png",
-    "Ataque": "Sofoco"
+    "Ataque": "Sofoco",
+    "Shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/324.png"
   },
   {
     "Numero": 114,
     "Nombre": "Tangela",
     "Tipo": "Planta",
     "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png",
-    "Ataque": "Látigo cepa"
+    "Ataque": "Látigo cepa",
+    "Shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/114.png"
   },
   {
     "Numero": 270,
     "Nombre": "Lotad",
     "Tipo": "Planta",
     "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/270.png",
-    "Ataque": "Hoja afilada"
+    "Ataque": "Hoja afilada",
+    "Shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/270.png"
   },
   {
     "Numero": 252,
     "Nombre": "Treecko",
     "Tipo": "Planta",
     "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/252.png",
-    "Ataque": "Semilladora"
+    "Ataque": "Semilladora",
+    "Shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/252.png"
   },
   {
     "Numero": 331,
     "Nombre": "Cacnea",
     "Tipo": "Planta",
     "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/331.png",
-    "Ataque": "Hierba lazo"
+    "Ataque": "Hierba lazo",
+    "Shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/331.png"
   },
   {
     "Numero": 388,
     "Nombre": "Grotle",
     "Tipo": "Planta",
     "Imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/388.png",
-    "Ataque": "Hoja afilada"
+    "Ataque": "Hoja afilada",
+    "Shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/388.png"
   },
   {
-    "Numero": "",
+    "Numero": " ",
     "Nombre": "Pokemon no encontrado",
-    "Tipo": "",
+    "Tipo": "Desconocido",
     "Imagen": "https://freestencilgallery.com/wp-content/uploads/2017/04/Pokemon-Ditto-Silhouette-Stencil-thumb.jpg",
-    "Ataque": " "
+    "Ataque": " ",
+    "Shiny": "https://freestencilgallery.com/wp-content/uploads/2017/04/Pokemon-Ditto-Silhouette-Stencil-thumb.jpg"
   }
 ]

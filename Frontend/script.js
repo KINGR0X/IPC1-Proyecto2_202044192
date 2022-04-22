@@ -44,35 +44,13 @@ async function buscar() {
     });
 }
 
-//Buscar pokemon por numero
-async function buscarNumero() {
-  limpiarPokes(pokemonContainer);
-  let url = "http://localhost:5000/Numero_Pokedex";
-  //json con el que le mandamos los datos al post
-  var numero = {
-    num: document.getElementById("poke").value,
-  };
-
-  const respuestas = await fetch(url, {
-    method: "POST", // or 'PUT'
-    body: JSON.stringify(numero),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      crearPokemon(data);
-    });
-}
-
 //Buscar pokemon por tipo
-async function buscarTipo(numB) {
+async function buscarTipo(numB, tipoPok) {
   limpiarPokes(pokemonContainer);
   let url = "http://localhost:5000/Tipo_Pokedex";
   //json con el que le mandamos los datos al post
   var tipoP = {
-    tipo: document.getElementById("poke").value,
+    tipo: tipoPok,
     numTipo: numB,
   };
 
@@ -89,35 +67,57 @@ async function buscarTipo(numB) {
     });
 }
 
-function todoTipo() {
-  var cont;
-  var max;
-  cont = 0;
-  if (document.getElementById("poke").value == "Agua") {
-    cont = 0;
-    max = 5;
-  } else if (document.getElementById("poke").value == "Fuego") {
-    cont = 5;
-    max = 10;
-  } else if (document.getElementById("poke").value == "Planta") {
-    cont = 10;
-    max = 15;
-  } else {
-    cont = 20;
-    max = 21;
-  }
+function tipoAgua() {
+  var cont = 0;
+  var max = 5;
+
+  var tipo = "Agua";
 
   for (var cont; cont < max; cont++) {
-    buscarTipo(cont);
+    buscarTipo(cont, tipo);
+  }
+}
+
+function tipoFuego() {
+  var cont = 5;
+  var max = 10;
+
+  var tipo = "Fuego";
+
+  for (var cont; cont < max; cont++) {
+    buscarTipo(cont, tipo);
+  }
+}
+
+function tipoPlanta() {
+  var cont = 10;
+  var max = 15;
+
+  var tipo = "Planta";
+
+  for (var cont; cont < max; cont++) {
+    buscarTipo(cont, tipo);
   }
 }
 
 function crearPokemon(pokemon) {
+  //parte de atras de la tarjeta
+  const flipCard = document.createElement("div");
+  flipCard.classList.add("flip-card");
+
+  const cardContainer = document.createElement("div");
+  cardContainer.classList.add("card-container");
+
+  flipCard.appendChild(cardContainer);
+
   const card = document.createElement("div");
   card.classList.add("pokemon-block");
 
   const spriteContainer = document.createElement("div");
   spriteContainer.classList.add("img-container");
+
+  const shinyContainer = document.createElement("div");
+  shinyContainer.classList.add("shiny-container");
 
   //Le agrego el atributo onclick, para poder obtener el nombre del pokemon
   // spriteContainer.setAttribute("onClick", num);
@@ -127,6 +127,12 @@ function crearPokemon(pokemon) {
 
   spriteContainer.appendChild(sprite);
 
+  //imagen shiny
+  const spriteShiny = document.createElement("img");
+  spriteShiny.src = pokemon.Shiny;
+
+  shinyContainer.appendChild(spriteShiny);
+
   const number = document.createElement("p");
   number.textContent = `Nº ${pokemon.Numero}`;
 
@@ -135,11 +141,18 @@ function crearPokemon(pokemon) {
   name.setAttribute("id", "nombre");
   name.textContent = pokemon.Nombre;
 
+  const nameShiny = document.createElement("p");
+  nameShiny.classList.add("nameShiny");
+  nameShiny.setAttribute("id", "nombre");
+  nameShiny.textContent = pokemon.Nombre + " Shiny";
+
   const type = document.createElement("p");
+  //Para colcoarle css al tipo
+  type.classList.add(pokemon.Tipo);
   type.textContent = pokemon.Tipo;
 
   const attack = document.createElement("p");
-  attack.textContent = pokemon.Ataque;
+  attack.textContent = "Ataque: " + pokemon.Ataque;
 
   //imagen del poke
   card.appendChild(spriteContainer);
@@ -152,7 +165,15 @@ function crearPokemon(pokemon) {
   //ataque del pokemon
   card.appendChild(attack);
 
-  pokemonContainer.appendChild(card);
+  const cardBack = document.createElement("div");
+  cardBack.classList.add("pokemon-block-back");
+
+  cardBack.appendChild(shinyContainer);
+  cardBack.appendChild(nameShiny);
+
+  cardContainer.appendChild(card);
+  cardContainer.appendChild(cardBack);
+  pokemonContainer.appendChild(flipCard);
 }
 
 // function datos(nombreD) {

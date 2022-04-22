@@ -66,41 +66,21 @@ app.get("/pokemons", (req, res) => {
   }
 });
 
-//Mostrar pokemons por numero
-app.post("/Numero_Pokedex", (req, res) => {
-  let pokes = require("./pokedex.json"); //variable que guarda el json de pokedex
-
-  var num = req.body.num;
-
-  var numeroEncontrado = false;
-
-  for (var i = 0; i < pokes.length; i++) {
-    if (num == pokes[i].Numero) {
-      //Mostrar la informcacion del pokemon
-      res.send(pokes[i]);
-      numeroEncontrado = true;
-      break;
-    } else {
-      numeroEncontrado = false;
-    }
-  }
-
-  //Mensaje en el caso que no se encuentre el usuario
-  if (numeroEncontrado == false) {
-    res.send(pokes[15]);
-  }
-});
-
-//Mostrar pokemons por Nombre
+//Mostrar pokemons por Nombre o id
 app.post("/Nombre_Pokedex", (req, res) => {
   let pokes = require("./pokedex.json"); //variable que guarda el json de pokedex
 
   var nombre = req.body.nombre;
 
+  nombre = nombre[0].toUpperCase() + nombre.slice(1);
+
   var nombreEncontrado = false;
 
   for (var i = 0; i < pokes.length; i++) {
-    if (nombre == pokes[i].Nombre) {
+    if (
+      nombre.trim() == pokes[i].Nombre ||
+      parseInt(nombre) == pokes[i].Numero
+    ) {
       //Mostrar la informcacion del pokemon
       res.send(pokes[i]);
       nombreEncontrado = true;
@@ -120,8 +100,6 @@ app.post("/Nombre_Pokedex", (req, res) => {
 app.post("/Tipo_Pokedex", (req, res) => {
   let pokedexT = require("./pokedex.json");
 
-  var tipoEncontrado = false;
-
   var tipo = req.body.tipo;
 
   var numTipo = req.body.numTipo;
@@ -135,8 +113,6 @@ app.post("/Tipo_Pokedex", (req, res) => {
   } else if (tipo == "Planta") {
     res.send(pokedexT[numTipo]);
     tipoEncontrad = true;
-  } else if (numTipo >= 20) {
-    res.send(pokedexT[15]);
   }
 });
 

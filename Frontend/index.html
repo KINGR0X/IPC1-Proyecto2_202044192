@@ -14,16 +14,54 @@
     <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <button onClick="atrapaATodos()">Mostrar todos los pokemons</button>
-    <button onClick="limpiar()">limpiar pokemons</button>
+    <header>
+      <div class="interior">
+        <a class="logo" onClick="atrapaATodos()"
+          ><img
+            src="https://1000marcas.net/wp-content/uploads/2020/01/Pokemon-Logo.png"
+            alt="Logo"
+        /></a>
+        <nav class="navegacion">
+          <div>
+            <input
+              class="BarraBuscar"
+              type="text"
+              placeholder="Buscar nombre/número"
+              id="poke"
+              autocomplete="off"
+            />
+          </div>
 
-    <!-- Barra del busqueda -->
-    <input type="text" id="poke" />
-    <button onClick="buscar()">Enviar</button>
-    <button onClick="buscarNumero()">Buscar Número</button>
-    <button onClick="todoTipo()">Buscar Tipo</button>
+          <ul>
+            <li>
+              <button class="boton" type="submit" onClick="buscar()">
+                Buscar
+              </button>
+            </li>
 
-    <h1 class="title">Pokedex</h1>
+            <li>
+              <button class="boton" onClick="atrapaATodos()">Todos</button>
+            </li>
+
+            <li class="submenu">
+              <button class="boton">Tipos</button>
+              <ul class="hijos">
+                <li>
+                  <button class="sub" onClick="tipoFuego()">Fuego</button>
+                </li>
+                <li>
+                  <button class="sub" onClick="tipoAgua()">Agua</button>
+                </li>
+                <li>
+                  <button class="sub" onClick="tipoPlanta()">Planta</button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <!-- Este container se usa para crear todo los pokes -->
     <div class="pokemon-container"></div>
   </body>

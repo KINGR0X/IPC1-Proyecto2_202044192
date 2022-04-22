@@ -1,16 +1,3 @@
-body {
-  background: rgb(85, 144, 189);
-  background: linear-gradient(
-    90deg,
-    rgba(85, 144, 189, 1) 0%,
-    rgba(108, 183, 240, 1) 54%,
-    rgba(182, 216, 242, 1) 82%
-  );
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-family: "Roboto", sans-serif;
-}
-
 h1 {
   color: white;
 }
@@ -38,10 +25,55 @@ h1 {
   margin: 5px;
 }
 
-.name {
+.name,
+.nameShiny {
   text-transform: capitalize;
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+.Agua {
+  background-color: rgb(104, 144, 240);
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.Fuego {
+  background-color: rgb(243, 153, 89);
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.Planta {
+  background-color: rgb(147, 211, 115);
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.Desconocido {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
 }
 
 .card-container {
@@ -74,4 +106,133 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 2fr;
   text-align: left;
+}
+
+.boton {
+  margin: 0;
+  background-color: #0b132b;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  border: none;
+  color: white;
+  text-decoration: none;
+
+  padding: 30px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.BarraBuscar {
+  text-align: left;
+  padding: 10px 0px 0px 0px;
+  font-size: 16px;
+  size: 100%;
+}
+
+.sub {
+  margin: 0;
+  background-color: #0b132b;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  border: none;
+  color: white;
+  text-decoration: none;
+
+  padding: 10px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.navegacion ul li a {
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 20px;
+  transition: 0.3s linear;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #2ca6b6;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  background-color: #0b132b;
+}
+
+.interior {
+  max-width: 100%;
+  padding: 0 15px;
+  margin: auto;
+}
+
+.logo {
+  float: left;
+  padding: 5px 20px 0;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+.navegacion {
+  float: right;
+  display: flex;
+  align-items: center;
+  min-height: 90px;
+  z-index: 1000;
+}
+.navegacion ul {
+  list-style: none;
+  padding: 0 10px;
+}
+.navegacion ul li {
+  display: inline-block;
+  position: relative;
+  transition: 0.3s linear;
+  z-index: 1000;
+}
+.navegacion ul li:hover {
+  transform: scale(1.1);
+}
+
+.navegacion ul li a:hover {
+  color: #00c9bd;
+  transform: scale(1.1);
+}
+.navegacion ul li:hover .hijos {
+  display: block;
+}
+.navegacion .submenu .hijos {
+  display: none;
+  background: #0b132b;
+  position: absolute;
+  width: 100%;
+  height: 160%;
+}
+.navegacion .submenu .hijos li {
+  display: block;
+  overflow: hidden;
+  border-bottom: none;
+}
+.navegacion .submenu .hijos li a {
+  display: block;
 }
