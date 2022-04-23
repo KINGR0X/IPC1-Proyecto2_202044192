@@ -15,10 +15,6 @@ app.use(cors());
 
 // rutas
 
-app.get("/", (req, res) => {
-  res.send("Lugar por defecto");
-});
-
 //Login usuarios
 app.post("/usuarios", (req, res) => {
   let users = require("./users.json"); //variable que guarda el json de usuarios
@@ -29,9 +25,13 @@ app.post("/usuarios", (req, res) => {
   var usuarioEncontrado = false;
 
   for (var i = 0; i < users.length; i++) {
-    if (usuario == users[i].Usuario && password == users[i].Password) {
-      res.send({ Mensaje: "Usuario encontrado" });
+    if (
+      usuario.trim() == users[i].Usuario &&
+      password.trim() == users[i].Password
+    ) {
       usuarioEncontrado = true;
+      res.send(usuarioEncontrado);
+      // location.href = "Fronted/pokedex.html";
       break;
     } else {
       usuarioEncontrado = false;
@@ -40,7 +40,7 @@ app.post("/usuarios", (req, res) => {
 
   //Mensaje en el caso que no se encuentre el usuario
   if (usuarioEncontrado == false) {
-    res.send({ Mensaje: "Usuario NO encontrado" });
+    res.send(usuarioEncontrado);
   }
 });
 

@@ -126,7 +126,7 @@ h1 {
 
 .BarraBuscar {
   text-align: left;
-  padding: 10px 0px 0px 0px;
+  padding: 3px 0px 0px 0px;
   font-size: 16px;
   size: 100%;
 }
@@ -166,7 +166,10 @@ h1 {
 }
 
 body {
-  background: #2ca6b6;
+  background: rgb(229, 229, 229);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -186,13 +189,19 @@ header {
   padding: 5px 20px 0;
 }
 
+.logoN {
+  float: right;
+  padding: 10px 15px 0;
+}
+
+.logoN img {
+  height: 70px;
+}
+
 .logo img {
   height: 80px;
 }
 
-.logo img:hover {
-  transform: scale(1.1);
-}
 .navegacion {
   float: right;
   display: flex;
@@ -234,5 +243,17 @@ header {
   border-bottom: none;
 }
 .navegacion .submenu .hijos li a {
+  display: block;
+}
+
+.footer {
+  text-decoration: none;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  margin-top: auto;
+}
+
+.footer__snorlax {
+  margin: 10px auto;
   display: block;
 }

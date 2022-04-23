@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <!-- fuente roboto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" type="text/javascript" defer></script>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="icon" href="img/pngwing.com.png">
+  </head>
+  <body>
+    <header>
+      <div class="interior">
+        <a class="logo" onClick="atrapaATodos()"
+          ><img
+            src="https://1000marcas.net/wp-content/uploads/2020/01/Pokemon-Logo.png"
+            alt="Logo"
+        /></a>
+        <nav class="navegacion">
+          <div>
+            <input
+              class="BarraBuscar"
+              placeholder="Buscar nombre/número"
+              type="text"
+              id="poke"
+              autocomplete="off"
+            />
+          </div>
+
+          <ul>
+            <li>
+              <button class="boton" type="submit" onClick="buscar()">
+                Buscar
+              </button>
+            </li>
+
+            <li>
+              <button class="boton" onClick="atrapaATodos()">Todos los pokemons</button>
+            </li>
+
+            <li class="submenu">
+              <button class="boton">Tipos</button>
+              <ul class="hijos">
+                <li>
+                  <button class="sub" onClick="tipoFuego()">Fuego</button>
+                </li>
+                <li>
+                  <button class="sub" onClick="tipoAgua()">Agua</button>
+                </li>
+                <li>
+                  <button class="sub" onClick="tipoPlanta()">Planta</button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Este container se usa para crear todo los pokes -->
+    <div class="pokemon-container"></div>
+    <br><br><br><br><br>
+  </body>
+  <footer class="footer">
+    <br>
+    <div >
+        <div id="footer--privacy">
+          <ul>
+            <li>
+              <a
+                href="https://www.pokemon.com/es/condiciones-de-uso/"
+                target="_blank"
+                style="color: #ffffff; text-decoration: none;"
+                
+                >CONDICIONES DE USO</a
+              >
+            </li>
+
+            <li>
+              <a
+
+                href="https://www.pokemon.com/es/aviso-de-privacidad/"
+                target="_blank"
+                style="color: #ffffff; text-decoration: none;"
+                >AVISO DE PRIVACIDAD</a
+              >
+              
+            </li>
+
+            <li>
+              <a
+                id="cookieLink"
+                href="https://www.pokemon.com/es/legal/"
+                target="_blank"
+                style="color: #ffffff; text-decoration: none;"
+                >INFORMACIÓN LEGAL</a
+              >
+            </li>
+          </ul>
+        </div>
+<br>
+        <span
+          >©2022 Pokémon. ©1995 - 2022 Nintendo/Creatures Inc./GAME FREAK inc.
+          TM, ®Nintendo.</span
+        >
+      </div>
+    </div>
+    <br>
+    <img class="footer__snorlax" src="img/pngfind.com-snorlax-png-2883219.png"alt="Snorlax"  loading="lazy" height="400" >
+
+   
+  </footer>
+</html>

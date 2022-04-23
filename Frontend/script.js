@@ -1,5 +1,36 @@
 const pokemonContainer = document.querySelector(".pokemon-container");
 
+//Buscar usuario
+async function buscarUsuario() {
+  let url = "http://localhost:5000/usuarios";
+  //json con el que le mandamos los datos al post
+  var usuarios = {
+    usuario: document.getElementById("nombre").value,
+    password: document.getElementById("password").value,
+  };
+
+  const respuestas = await fetch(url, {
+    method: "POST", // or 'PUT'
+    body: JSON.stringify(usuarios),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      usuarioReal(data);
+    });
+}
+
+function usuarioReal(datos) {
+  if (datos == true) {
+    location.href = "pokedex.html";
+  } else if (datos == false) {
+    // alert("Error");
+    $("#exampleModalCenter").modal("show");
+  }
+}
+
 function Todos() {
   limpiarPokes(pokemonContainer);
   let url = "http://localhost:5000/pokemons";
@@ -15,6 +46,8 @@ function Todos() {
 // var kill = "datos" + "(" + parseInt(quemado) + ")";
 
 function atrapaATodos() {
+  document.body.style.backgroundColor = "rgb(229, 229, 229)";
+
   for (var i = 0; i < 15; i++) {
     // quemado = quemado + 1;
     // kill = "datos" + "(" + parseInt(quemado) + ")";
@@ -24,11 +57,18 @@ function atrapaATodos() {
 
 //Buscar pokemon por nombre
 async function buscar() {
+  document.body.style.backgroundColor = "rgb(229, 229, 229)";
+  var nombreB = document.getElementById("poke").value;
+
+  if (nombreB == "") {
+    nombreB = "X";
+  }
+
   limpiarPokes(pokemonContainer);
   let url = "http://localhost:5000/Nombre_Pokedex";
   //json con el que le mandamos los datos al post
   var names = {
-    nombre: document.getElementById("poke").value,
+    nombre: nombreB,
   };
 
   const respuestas = await fetch(url, {
@@ -70,6 +110,7 @@ async function buscarTipo(numB, tipoPok) {
 function tipoAgua() {
   var cont = 0;
   var max = 5;
+  document.body.style.backgroundColor = "rgba(104, 144, 240)";
 
   var tipo = "Agua";
 
@@ -81,7 +122,7 @@ function tipoAgua() {
 function tipoFuego() {
   var cont = 5;
   var max = 10;
-
+  document.body.style.backgroundColor = "rgba(243, 153, 89)";
   var tipo = "Fuego";
 
   for (var cont; cont < max; cont++) {
@@ -92,7 +133,7 @@ function tipoFuego() {
 function tipoPlanta() {
   var cont = 10;
   var max = 15;
-
+  document.body.style.backgroundColor = "rgba(147, 211, 115)";
   var tipo = "Planta";
 
   for (var cont; cont < max; cont++) {

@@ -1,0 +1,50 @@
+.est {
+  border: 3px solid #f71313;
+  margin: 7px 0px 300px 200px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Estilo de los botones*/
+button {
+  background-color: #e21919;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Centrar sprite */
+.imgcontainer {
+  text-align: center;
+  margin: 10px 0 0px 0;
+}
+
+.container {
+  padding: 45px;
+}
+
+.oak {
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  justify-content: center;
+  margin: 0px 100px 0px 0px;
+  align-items: center;
+}
+
+.login-design {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  height: 120vh;
+}

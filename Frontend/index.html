@@ -3,66 +3,145 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokedex</title>
-    <!-- fuente roboto -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login</title>
+     <link href="styles.css" rel="stylesheet" />
+     <link href="stylesIndex.css" rel="stylesheet" />
+
+    <link rel="icon" href="img/pngwing.com.png" />
     <script src="script.js" type="text/javascript" defer></script>
-    <link href="styles.css" rel="stylesheet" />
+
+     <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
   </head>
   <body>
-    <header>
-      <div class="interior">
-        <a class="logo" onClick="atrapaATodos()"
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Error</h5>
+      
+      </div>
+      <div class="modal-body">
+        Usuario o contraseña incorrectos
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+       <header>
+
+        <a class="logo"
           ><img
             src="https://1000marcas.net/wp-content/uploads/2020/01/Pokemon-Logo.png"
             alt="Logo"
         /></a>
-        <nav class="navegacion">
-          <div>
-            <input
-              class="BarraBuscar"
-              type="text"
-              placeholder="Buscar nombre/número"
-              id="poke"
-              autocomplete="off"
-            />
-          </div>
 
-          <ul>
-            <li>
-              <button class="boton" type="submit" onClick="buscar()">
-                Buscar
-              </button>
-            </li>
+         <a class="logoN" 
+          ><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nintendo.svg/2560px-Nintendo.svg.png"
+            alt="Logo"
+        /></a>
 
-            <li>
-              <button class="boton" onClick="atrapaATodos()">Todos</button>
-            </li>
-
-            <li class="submenu">
-              <button class="boton">Tipos</button>
-              <ul class="hijos">
-                <li>
-                  <button class="sub" onClick="tipoFuego()">Fuego</button>
-                </li>
-                <li>
-                  <button class="sub" onClick="tipoAgua()">Agua</button>
-                </li>
-                <li>
-                  <button class="sub" onClick="tipoPlanta()">Planta</button>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
+        </header>
+    
     <!-- Este container se usa para crear todo los pokes -->
     <div class="pokemon-container"></div>
-  </body>
+  
+    <main class="login-design">
+  <!-- Formulario de Login -->
+    <div class="est" >
+  <div class="imgcontainer">
+    <img src="https://camo.githubusercontent.com/09e4b088e4ecd22445611522cd757eeecd593780a5ba2a80f9ec4516091536e5/68747470733a2f2f7061312e6e61727669692e636f6d2f363534322f343931363730343634343937316439633230633439346639373735663539653164333164363864345f68712e676966" alt="Avatar" >
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Nombre de usuario</b></label>
+    <input type="text"  autocomplete="off" placeholder="Usuario" name="uname" id="nombre" required>
+
+    <label for="psw"><b>Contraseña</b></label>
+    <input type="password" autocomplete="off" placeholder="Contraseña" name="psw" id="password"  required>
+
+    <button type="submit" onClick="buscarUsuario()">Ingresar</button>
+
+        </div>
+    </div>
+
+    <div class="oak">
+    <img src="img/oak.png" alt="Avatar" height="850px">
+  </div>
+
+    </main>
+   
+</body>
+
+<!-- Footer -->
+  <footer class="footer">
+    <br>
+    <div >
+        <div id="footer--privacy">
+          <ul>
+            <li>
+              <a
+                href="https://www.pokemon.com/es/condiciones-de-uso/"
+                target="_blank"
+                style="color: #ffffff; text-decoration: none;"
+                
+                >CONDICIONES DE USO</a
+              >
+            </li>
+
+            <li>
+              <a
+
+                href="https://www.pokemon.com/es/aviso-de-privacidad/"
+                target="_blank"
+                style="color: #ffffff; text-decoration: none;"
+                >AVISO DE PRIVACIDAD</a
+              >
+              
+            </li>
+
+            <li>
+              <a
+                id="cookieLink"
+                href="https://www.pokemon.com/es/legal/"
+                target="_blank"
+                style="color: #ffffff; text-decoration: none;"
+                >INFORMACIÓN LEGAL</a
+              >
+            </li>
+          </ul>
+        </div>
+<br>
+        <span
+          >©2022 Pokémon. ©1995 - 2022 Nintendo/Creatures Inc./GAME FREAK inc.
+          TM, ®Nintendo.</span
+        >
+      </div>
+    </div>
+    <br>
+    <img class="footer__snorlax" src="img/pngfind.com-snorlax-png-2883219.png"alt="Snorlax"  loading="lazy" height="400" >
+   
+  </footer>
+  
 </html>
