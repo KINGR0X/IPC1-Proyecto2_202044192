@@ -30,7 +30,7 @@ app.post("/usuarios", (req, res) => {
       password.trim() == users[i].Password
     ) {
       usuarioEncontrado = true;
-      res.send(usuarioEncontrado);
+      res.send(users[i]);
       // location.href = "Fronted/pokedex.html";
       break;
     } else {

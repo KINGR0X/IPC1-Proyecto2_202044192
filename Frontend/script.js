@@ -23,12 +23,25 @@ async function buscarUsuario() {
 }
 
 function usuarioReal(datos) {
-  if (datos == true) {
+  if (
+    datos.Usuario == "Elian" ||
+    datos.Usuario == "IPC1F" ||
+    datos.Usuario == "IPC1B"
+  ) {
+    localStorage.setItem("nombre", datos.Usuario);
     location.href = "pokedex.html";
   } else if (datos == false) {
     // alert("Error");
     $("#exampleModalCenter").modal("show");
   }
+}
+// Nombre del usuario en pantalla
+var nombreUsuario = localStorage.getItem("nombre");
+var contenedor = document.getElementById("nombreU");
+contenedor.innerHTML = "<h2>" + "Bienvenido: " + nombreUsuario + "</h2>";
+
+function cerrarSesion() {
+  location.href = "index.html";
 }
 
 function Todos() {
