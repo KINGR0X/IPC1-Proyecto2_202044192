@@ -23,16 +23,12 @@ async function buscarUsuario() {
 }
 
 function usuarioReal(datos) {
-  if (
-    datos.Usuario == "Elian" ||
-    datos.Usuario == "IPC1F" ||
-    datos.Usuario == "IPC1B"
-  ) {
-    localStorage.setItem("nombre", datos.Usuario);
-    location.href = "pokedex.html";
-  } else if (datos == false) {
+  if (datos == false) {
     // alert("Error");
     $("#exampleModalCenter").modal("show");
+  } else {
+    localStorage.setItem("nombre", datos.Usuario);
+    location.href = "pokedex.html";
   }
 }
 // Nombre del usuario en pantalla
